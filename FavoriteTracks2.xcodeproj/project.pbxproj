@@ -19,7 +19,6 @@
 		B4A9C13A26F9FCF300B7F6A6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C13926F9FCF300B7F6A6 /* Persistence.swift */; };
 		B4A9C13D26F9FD1000B7F6A6 /* TrackLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C13C26F9FD1000B7F6A6 /* TrackLoader.swift */; };
 		B4A9C14026F9FD2200B7F6A6 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C13F26F9FD2200B7F6A6 /* ImageLoader.swift */; };
-		B4A9C14326F9FD4800B7F6A6 /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C14226F9FD4800B7F6A6 /* TrackListView.swift */; };
 		B4A9C14726F9FD6300B7F6A6 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C14626F9FD6300B7F6A6 /* TrackDetailView.swift */; };
 		B4A9C14A26F9FD7900B7F6A6 /* TrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C14926F9FD7900B7F6A6 /* TrackRowView.swift */; };
 		B4A9C14D26F9FE2800B7F6A6 /* TrackImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C14C26F9FE2800B7F6A6 /* TrackImageView.swift */; };
@@ -42,7 +41,6 @@
 		B4A9C13926F9FCF300B7F6A6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B4A9C13C26F9FD1000B7F6A6 /* TrackLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackLoader.swift; sourceTree = "<group>"; };
 		B4A9C13F26F9FD2200B7F6A6 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		B4A9C14226F9FD4800B7F6A6 /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
 		B4A9C14626F9FD6300B7F6A6 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		B4A9C14926F9FD7900B7F6A6 /* TrackRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRowView.swift; sourceTree = "<group>"; };
 		B4A9C14C26F9FE2800B7F6A6 /* TrackImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackImageView.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		B4A9C12D26F9F4BB00B7F6A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B4A9C14226F9FD4800B7F6A6 /* TrackListView.swift */,
 				B4A9C14626F9FD6300B7F6A6 /* TrackDetailView.swift */,
 				B4A9C14926F9FD7900B7F6A6 /* TrackRowView.swift */,
 				B4A9C14C26F9FE2800B7F6A6 /* TrackImageView.swift */,
@@ -118,6 +115,7 @@
 		B4A9C12E26F9F4D000B7F6A6 /* ModelViews */ = {
 			isa = PBXGroup;
 			children = (
+				B4A9C13626F9F90C00B7F6A6 /* Favorites.swift */,
 				B4A9C13F26F9FD2200B7F6A6 /* ImageLoader.swift */,
 				B4A9C13926F9FCF300B7F6A6 /* Persistence.swift */,
 				B4A9C13C26F9FD1000B7F6A6 /* TrackLoader.swift */,
@@ -130,7 +128,6 @@
 			children = (
 				B4A9C13026F9F50500B7F6A6 /* DataModel.swift */,
 				B4A9C13326F9F52600B7F6A6 /* Track.swift */,
-				B4A9C13626F9F90C00B7F6A6 /* Favorites.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,7 +208,6 @@
 				B4A9C14D26F9FE2800B7F6A6 /* TrackImageView.swift in Sources */,
 				B4A9C13426F9F52600B7F6A6 /* Track.swift in Sources */,
 				B4A9C13126F9F50500B7F6A6 /* DataModel.swift in Sources */,
-				B4A9C14326F9FD4800B7F6A6 /* TrackListView.swift in Sources */,
 				B4A9C15326F9FE9400B7F6A6 /* AppUsageView.swift in Sources */,
 				B4A9C13A26F9FCF300B7F6A6 /* Persistence.swift in Sources */,
 				B4A9C14026F9FD2200B7F6A6 /* ImageLoader.swift in Sources */,

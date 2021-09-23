@@ -23,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         model.load()
         let contentView = ContentView()
             .environmentObject(model)
+            .environmentObject(model.favorites)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

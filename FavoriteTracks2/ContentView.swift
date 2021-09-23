@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var model: DataModel
+    @EnvironmentObject var favorites: Favorites
     
     var body: some View {
         AppUsageView()
@@ -42,7 +43,6 @@ struct ContentView: View {
                 Persistence().saveShowFavorites(show: value)
             })
         }
-        .environmentObject(model.favorites)
 
         Spacer()
     }
@@ -53,5 +53,6 @@ struct ContentView_Previews: PreviewProvider {
         let model = DataModel.sample
         ContentView()
             .environmentObject(model)
+            .environmentObject(model.favorites)
     }
 }
