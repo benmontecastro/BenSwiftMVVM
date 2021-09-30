@@ -10,41 +10,31 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var model: DataModel
     @EnvironmentObject var favorites: Favorites
-    
+    @State var selectedTab: Tab = .list
+
+    enum Tab {
+        case list
+        case faves
+    }
+
     var body: some View {
-        AppUsageView()
-        
-        SearchBarView(searchText: $model.searchString)
-            .padding(5)
+        ZStack(alignment: .topLeading) {
+            AppUsageView()
 
-        NavigationView {
-            List(model.tracks.filter( { model.isFavoritesOnly ? $0.isFavorite() : model.searchString.isEmpty ? true : $0.trackName.contains(model.searchString) } ), id: \.trackId) {
-                track in
-                /// Link to Detail view
-                NavigationLink(destination: TrackDetailView(track: track)) {
-                    TrackRowView(track: track)
-                }
+            TabView(selection: $selectedTab) {
+                TrackListView()
+                    .tag(Tab.list)
+                    .tabItem {
+                        Label("Tracks", systemImage: "list.bullet")
+                    }
+
+                FavoriteListView()
+                    .tag(Tab.faves)
+                    .tabItem {
+                        Label("Favorites", systemImage: "star")
+                    }
             }
-            .navigationBarTitle("Tracks", displayMode: .inline)
-            .navigationBarItems(trailing:
-                Button(action: {
-                    model.isFavoritesOnly = !model.isFavoritesOnly
-                }) {
-                    Image(systemName: "star.fill").imageScale(.medium)
-                        .foregroundColor( model.isFavoritesOnly ? .green : .gray )
-                        .border( model.isFavoritesOnly ? Color.green : Color.gray )
-                }
-            )
-            .listStyle(PlainListStyle())
-            .onChange(of: model.searchString, perform: { value in
-                Persistence().saveSearchText(text: value)
-            })
-            .onChange(of: model.isFavoritesOnly, perform: { value in
-                Persistence().saveShowFavorites(show: value)
-            })
         }
-
-        Spacer()
     }
 }
 

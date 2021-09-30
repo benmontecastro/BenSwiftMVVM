@@ -24,6 +24,8 @@
 		B4A9C14D26F9FE2800B7F6A6 /* TrackImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C14C26F9FE2800B7F6A6 /* TrackImageView.swift */; };
 		B4A9C15026F9FE3F00B7F6A6 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C14F26F9FE3F00B7F6A6 /* SearchBarView.swift */; };
 		B4A9C15326F9FE9400B7F6A6 /* AppUsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A9C15226F9FE9400B7F6A6 /* AppUsageView.swift */; };
+		B4D257522705E3E6003D35F0 /* TrackListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D257512705E3E6003D35F0 /* TrackListView.swift */; };
+		B4D257552705E560003D35F0 /* FavoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D257542705E560003D35F0 /* FavoriteListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		B4A9C14C26F9FE2800B7F6A6 /* TrackImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackImageView.swift; sourceTree = "<group>"; };
 		B4A9C14F26F9FE3F00B7F6A6 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		B4A9C15226F9FE9400B7F6A6 /* AppUsageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUsageView.swift; sourceTree = "<group>"; };
+		B4D257512705E3E6003D35F0 /* TrackListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListView.swift; sourceTree = "<group>"; };
+		B4D257542705E560003D35F0 /* FavoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,13 @@
 		B4A9C12D26F9F4BB00B7F6A6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B4D257512705E3E6003D35F0 /* TrackListView.swift */,
 				B4A9C14626F9FD6300B7F6A6 /* TrackDetailView.swift */,
 				B4A9C14926F9FD7900B7F6A6 /* TrackRowView.swift */,
 				B4A9C14C26F9FE2800B7F6A6 /* TrackImageView.swift */,
-				B4A9C14F26F9FE3F00B7F6A6 /* SearchBarView.swift */,
 				B4A9C15226F9FE9400B7F6A6 /* AppUsageView.swift */,
+				B4D257542705E560003D35F0 /* FavoriteListView.swift */,
+				B4A9C14F26F9FE3F00B7F6A6 /* SearchBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,9 +212,11 @@
 				B4A9C14726F9FD6300B7F6A6 /* TrackDetailView.swift in Sources */,
 				B4A9C11926F9F4AB00B7F6A6 /* AppDelegate.swift in Sources */,
 				B4A9C14D26F9FE2800B7F6A6 /* TrackImageView.swift in Sources */,
+				B4D257522705E3E6003D35F0 /* TrackListView.swift in Sources */,
 				B4A9C13426F9F52600B7F6A6 /* Track.swift in Sources */,
 				B4A9C13126F9F50500B7F6A6 /* DataModel.swift in Sources */,
 				B4A9C15326F9FE9400B7F6A6 /* AppUsageView.swift in Sources */,
+				B4D257552705E560003D35F0 /* FavoriteListView.swift in Sources */,
 				B4A9C13A26F9FCF300B7F6A6 /* Persistence.swift in Sources */,
 				B4A9C14026F9FD2200B7F6A6 /* ImageLoader.swift in Sources */,
 				B4A9C13726F9F90C00B7F6A6 /* Favorites.swift in Sources */,
